@@ -5,6 +5,15 @@
         http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
+<!--    <bean id="clubStore" class="io.namoosori.travelclub.spring.store.mapStore.ClubMapStore"/>
+    <bean id="clubService" class="io.namoosori.travelclub.spring.service.logic.ClubServiceLogic">
+        <constructor-arg ref="clubStore"/>
+    </bean>-->
+
+    <!-- 베이스 패키지부터 하위의 빈들을 찾아라 -->
+    <context:component-scan base-package="io.namoosori.travelclub.spring"/>
+
+
 </beans>
 
 

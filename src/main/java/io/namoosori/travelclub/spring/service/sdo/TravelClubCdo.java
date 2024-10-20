@@ -12,7 +12,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TravelClubCdo implements Serializable {
-    //
     private String name;
     private String intro;
 }
